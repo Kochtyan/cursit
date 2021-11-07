@@ -7,7 +7,6 @@
     width: 100vw;
     position: relative;
     margin: 0;
-
     padding: 0;
     background-color: #2f2f2f;
 }
@@ -20,7 +19,7 @@
     width: 15vw;
     background-position: 0 50%;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
     z-index: 2;
     animation: dd1 10s 1, dd12 10s 1;
@@ -35,7 +34,7 @@
     width: 25vw;
     background-position: -10vw 50%;
     left: 10vw;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
     z-index: 1;
     animation: dd2 10s 2;
@@ -52,7 +51,7 @@
     left: 25vw;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
     background-position: -35vw 50%;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
     z-index: 3;
     animation: dd3 10s 2;
@@ -68,7 +67,7 @@
     width: 25vw;
     left: 60vw;
     background-position: -70vw 50%;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
     z-index: 1;
     animation: dd4 10s 2;
@@ -120,57 +119,135 @@
     }
 }
 
-
-
-.all {
-
+.six {
+    background: #2f2f2f;
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-}
-
-    .menu .menu-item {
-        float: left;
-        margin: 0 0 0 0;
-        padding: 0;
-        background: #2f2f2f;
+    .six h1 {
+        font-weight: normal;
+        font-family: 'Merriweather', serif;
         position: relative;
+        display: inline-block;
+        margin: 0;
+        line-height: 1;
+        color: #C0C0C0;
+        font-size: 40px;
+        padding: .4em 1em .55em;
     }
 
-        .menu .menu-item a {
-            display: inline-block;
-            padding: 5px 10px;
-            color: #ffffff;
-
+        .six h1:before,
+        .six h1:after {
+            content: "";
+            position: absolute;
+            width: 60%;
+            height: .1em;
+            background: #006400;
         }
 
-    .menu .submenu {
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        background: #808080;
-        list-style: none;
-        /* Hide submenu */
-        opacity: 0;
-        visibility: hidden;
-        /* Submenu animation */
-        transition-property: opacity, visibility;
-        transition-duration: 0.9s;
-        transition-delay: 0.15s;
+        .six h1:before {
+            left: 0;
+            top: 0;
+        }
+
+        .six h1:after {
+            right: 0;
+            bottom: 0;
+        }
+
+        .six h1 span:before,
+        .six h1 span:after {
+            content: "";
+            position: absolute;
+            width: .65em;
+            height: .65em;
+            border: .1em solid #294200;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        .six h1 span:before {
+            top: -.55em;
+            left: -.325em;
+        }
+
+        .six h1 span:after {
+            bottom: -.55em;
+            right: -.325em;
+        }
+
+@media (max-width: 600px) {
+    .six h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 450px) {
+    .six h1 {
+        font-size: 1.5em;
+    }
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topmenu > li {
+    display: inline-block;
+    margin-right: 16%;
+    position: relative;
+}
+
+    .topmenu > li:last-child {
+        margin-right: 0;
+
     }
 
-    .menu .menu-item:hover .submenu {
-        /* Show submenu */
-        opacity: 1;
+a {
+    display: block;
+    padding: 10px 15px;
+    padding-left: 10px;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Lora', serif;
+    transition: .5s linear;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+.three ul {
+    background: #D3D3D3;
+}
+
+    .three ul a {
+        color: #74924C;
+    }
+
+.three .submenu {
+    visibility: hidden;
+    opacity: 0;
+    background: #DCDCDC;
+}
+
+    .three ul li:hover .submenu {
         visibility: visible;
-        background: #808080;
-    }
-
-    .menu .submenu-item {
-        padding: 5px 10px;
+        opacity: 1;
     }
 
