@@ -22,7 +22,7 @@
     top: 55%;
     transform: translateY(-50%);
     z-index: 2;
-    animation: dd1 10s 1, dd12 10s 1;
+    animation: dd1 10s 5, dd12 10s 5;
     animation-delay: 4s, 14s;
 }
 
@@ -37,7 +37,7 @@
     top: 55%;
     transform: translateY(-50%);
     z-index: 1;
-    animation: dd2 10s 2;
+    animation: dd2 10s 10;
     animation-delay: 4s;
 }
 
@@ -54,7 +54,7 @@
     top: 55%;
     transform: translateY(-50%);
     z-index: 3;
-    animation: dd3 10s 2;
+    animation: dd3 10s 10;
     animation-delay: 4s;
 }
 
@@ -70,7 +70,7 @@
     top: 55%;
     transform: translateY(-50%);
     z-index: 1;
-    animation: dd4 10s 2;
+    animation: dd4 10s 10;
     animation-delay: 4s;
 }
 
@@ -202,7 +202,7 @@ ul {
 
 .topmenu > li {
     display: inline-block;
-    margin-right: 16%;
+    margin-right: 14%;
     position: relative;
 }
 
@@ -219,6 +219,9 @@ a {
     outline: none;
     font-family: 'Lora', serif;
     transition: .5s linear;
+}
+.topmenu li a:hover {
+    color: #E6855F;
 }
 
 .submenu {
@@ -251,3 +254,67 @@ a {
         opacity: 1;
     }
 
+.d33 {
+    position: absolute;
+    background-image: url(img/back1.jpg);
+    background-size: 1700px 900px;
+    overflow: hidden;
+    height: 100vh;
+    width: 30vw;
+    left: 25vw;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    background-position: -35vw 60%;
+    top: 55%;
+    left:2%;
+    transform: translateY(-50%);
+    z-index: 3;
+    animation: dd33 10s 10;
+    animation-delay: 4s;
+}
+@keyframes dd33 {
+    0% {
+    }
+
+    50% {
+        background-position: Calc(-35vw - 40px) 50%;
+    }
+}
+
+.d44 {
+    position: absolute;
+    overflow: hidden;
+    background-image: url(img/back1.jpg);
+    background-size: 1700px 900px;
+    height: 80vh;
+    width: 20vw;
+    left: 60vw;
+    background-position: -70vw 60%;
+    top: 55%;
+    left: 31%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd44 10s 10;
+    animation-delay: 4s;
+}
+@keyframes dd44 {
+    0% {
+    }
+
+    50% {
+        background-position: Calc(-70vw - 40px) 50%;
+    }
+}
+
+.text {
+    text-align: center;
+    transform: translateX(55vw);
+    margin-right: 60%;
+    position: absolute;
+    top: 50%;
+    font-family: Verdana, sans-serif;
+    color: black;
+    border: 2px solid #555;
+    box-shadow: 3px 3px 5px #999;
+    background-color: #696969;
+    border: 15px #00B344 ridge;
+}
