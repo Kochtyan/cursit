@@ -19,11 +19,11 @@
     width: 15vw;
     background-position: 0 50%;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
-    top: 55%;
+    top: 60%;
     transform: translateY(-50%);
     z-index: 2;
-    animation: dd1 10s 5, dd12 10s 5;
-    animation-delay: 4s, 14s;
+    animation: dd1 10s 5, dd12 10s 50;
+    animation-delay: 2s, 14s;
 }
 
 .d2 {
@@ -34,11 +34,11 @@
     width: 25vw;
     background-position: -10vw 50%;
     left: 10vw;
-    top: 55%;
+    top: 60%;
     transform: translateY(-50%);
     z-index: 1;
-    animation: dd2 10s 10;
-    animation-delay: 4s;
+    animation: dd2 10s 100;
+    animation-delay: 2s;
 }
 
 .d3 {
@@ -51,11 +51,11 @@
     left: 25vw;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
     background-position: -35vw 50%;
-    top: 55%;
+    top: 60%;
     transform: translateY(-50%);
     z-index: 3;
-    animation: dd3 10s 10;
-    animation-delay: 4s;
+    animation: dd3 10s 100;
+    animation-delay: 2s;
 }
 
 .d4 {
@@ -67,11 +67,11 @@
     width: 25vw;
     left: 60vw;
     background-position: -70vw 50%;
-    top: 55%;
+    top: 60%;
     transform: translateY(-50%);
     z-index: 1;
-    animation: dd4 10s 10;
-    animation-delay: 4s;
+    animation: dd4 10s 100;
+    animation-delay: 2s;
 }
 
 @keyframes dd1 {
@@ -269,8 +269,8 @@ a {
     left:2%;
     transform: translateY(-50%);
     z-index: 3;
-    animation: dd33 10s 10;
-    animation-delay: 4s;
+    animation: dd33 10s 100;
+    animation-delay: 2s;
 }
 @keyframes dd33 {
     0% {
@@ -294,8 +294,8 @@ a {
     left: 31%;
     transform: translateY(-50%);
     z-index: 1;
-    animation: dd44 10s 10;
-    animation-delay: 4s;
+    animation: dd44 10s 100;
+    animation-delay: 2s;
 }
 @keyframes dd44 {
     0% {
@@ -313,10 +313,11 @@ a {
     margin-left:5%;
     position: absolute;
     top: 72%;
+    padding: 10px 10px;
     font-family: Verdana, sans-serif;
     width: 400px;
     box-shadow: 0 0 7px 3px #008000;
-    border-radius: 10px;
+    border-radius: 0;
     background-color: #696969;
 }
 
@@ -324,11 +325,12 @@ a {
     text-align: center;
     position: absolute;
     top: 173%;
-    margin-left: 6%;
+    padding: 10px 10px;
+    margin-left: 5%;
     font-family: Verdana, sans-serif;
     width: 400px;
     box-shadow: 0 0 7px 3px #008000;
-    border-radius: 10px;
+    border-radius: 0;
     background-color: #696969;
 }
 
@@ -345,7 +347,7 @@ a {
     left: 65%;
     transform: translateY(-50%);
     z-index: 3;
-    animation: dd33 10s 10;
+    animation: dd33 10s 100;
     animation-delay: 4s;
 }
 
@@ -369,7 +371,7 @@ a {
     top: 55%;
     transform: translateY(-50%);
     z-index: 1;
-    animation: dd222 10s 10;
+    animation: dd222 10s 100;
     animation-delay: 4s;
 }
 
@@ -381,3 +383,319 @@ a {
         background-position: Calc(-10vw - 40px) 50%;
     }
 }
+
+.texthelp {
+    text-align: center;
+    transform: translateX(35vw);
+    font-family: Verdana, sans-serif;
+    width: 400px;
+    box-shadow: 0 0 7px 3px #008000;
+    border-radius: 10px;
+    background-color: #696969;
+    padding: 10px 10px;
+}
+
+.texthelp1 {
+    text-align: left;
+    transform: translateX(1vw);
+    position: absolute;
+    top: 77%;
+    padding: 10px 10px;
+    font-family: Verdana, sans-serif;
+    width: 400px;
+    box-shadow: 0 0 7px 3px #008000;
+    border-radius: 10px;
+    background-color: #696969;
+}
+
+.texthelp2 {
+    text-align: left;
+    transform: translateX(33vw);
+    position: absolute;
+    top: 77%;
+    padding: 10px 10px;
+    font-family: Verdana, sans-serif;
+    width: 400px;
+    box-shadow: 0 0 7px 3px #008000;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: #696969;
+}
+
+.texthelp3 {
+    text-align: left;
+    transform: translateX(65vw);
+    position: absolute;
+    top: 77%;
+    padding: 10px 10px;
+    font-family: Verdana, sans-serif;
+    width: 400px;
+    box-shadow: 0 0 7px 3px #008000;
+    border-radius: 10px;
+    background-color: #696969;
+}
+
+
+
+
+
+
+.hide1,
+.hide1 + label ~ div {
+    display: none;
+}
+
+    .hide1 + label {
+        margin-left: 123px;
+        margin-bottom: 10px;
+        font-family: Verdana, sans-serif;
+        padding: 0;
+        color: #C0C0C0;
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+        top: 71%;
+    }
+
+    .hide1:checked + label {
+        color: #808080;
+        border-bottom: 0;
+    }
+
+        .hide1:checked + label + div {
+            display: block;
+            margin-left: 20px;
+            padding: 10px;
+            -webkit-animation: fade ease-in 0.5s;
+            -moz-animation: fade ease-in 0.5s;
+            animation: fade ease-in 0.5s;
+        }
+
+@-moz-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.hide1 + label:before {
+    color: #C0C0C0;
+    content: "\21D3";
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.hide1:checked + label:before {
+    content: "\21D1";
+    color: #808080;
+}
+
+
+
+
+
+.hide2,
+.hide2 + label ~ div {
+    display: none;
+}
+
+    .hide2 + label {
+        margin-left: 553px;
+        margin-bottom: 10px;
+        font-family: Verdana, sans-serif;
+        padding: 0;
+        color: #C0C0C0;
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+        top: 71%;
+    }
+
+    .hide2:checked + label {
+        color: #808080;
+        border-bottom: 0;
+    }
+
+        .hide2:checked + label + div {
+            display: block;
+            margin-left: 20px;
+            padding: 10px;
+            -webkit-animation: fade ease-in 0.5s;
+            -moz-animation: fade ease-in 0.5s;
+            animation: fade ease-in 0.5s;
+        }
+
+@-moz-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.hide2 + label:before {
+    color: #C0C0C0;
+    content: "\21D3";
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.hide2:checked + label:before {
+    content: "\21D1";
+    color: #808080;
+}
+
+
+
+
+.hide3,
+.hide3 + label ~ div {
+    display: none;
+}
+
+    .hide3 + label {
+        margin-left: 988px;
+        margin-bottom: 10px;
+        font-family: Verdana, sans-serif;
+        padding: 0;
+        color: #C0C0C0;
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+        top: 71%;
+    }
+
+    .hide3:checked + label {
+        color: #808080;
+        border-bottom: 0;
+    }
+
+        .hide3:checked + label + div {
+            display: block;
+            margin-left: 20px;
+            padding: 10px;
+            -webkit-animation: fade ease-in 0.5s;
+            -moz-animation: fade ease-in 0.5s;
+            animation: fade ease-in 0.5s;
+        }
+
+@-moz-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.hide3 + label:before {
+    color: #C0C0C0;
+    content: "\21D3";
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.hide3:checked + label:before {
+    content: "\21D1";
+    color: #808080;
+}
+
+
+
+
