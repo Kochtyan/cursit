@@ -34,6 +34,42 @@ window.onclick = function (event) {
     }
 }
 
+var modal3 = document.getElementById("my_modal3");
+var btn3 = document.getElementById("btn_modal_window3");
+var span3 = document.getElementsByClassName("close_modal_window3")[0];
+
+btn3.onclick = function () {
+    modal3.style.display = "block";
+}
+
+span3.onclick = function () {
+    modal3.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+}
+
+var modal4 = document.getElementById("my_modal4");
+var btn4 = document.getElementById("btn_modal_window4");
+var span4 = document.getElementsByClassName("close_modal_window4")[0];
+
+btn4.onclick = function () {
+    modal4.style.display = "block";
+}
+
+span4.onclick = function () {
+    modal4.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal4) {
+        modal4.style.display = "none";
+    }
+}
+
 
 var modalq = document.getElementById("my_modalq");
 var btnq = document.getElementById("btn_modal_windowq");
@@ -84,4 +120,4 @@ function anim(duration) {
     }
 };
 
-var scrollMenu = anim(200)
+var scrollMenu = anim(2000)
