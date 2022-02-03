@@ -2,6 +2,10 @@
     background-color: #2f2f2f;
 }
 
+.z11{
+    margin-top:60px;
+}
+
 .main {
     height: 100vh;
     width: 100vw;
@@ -23,7 +27,7 @@
     transform: translateY(-50%);
     z-index: 2;
     animation: dd1 10s 5, dd12 10s 50;
-    animation-delay: 2s, 14s;
+    animation-delay: 1s, 14s;
 }
 
 .d2 {
@@ -38,7 +42,7 @@
     transform: translateY(-50%);
     z-index: 1;
     animation: dd2 10s 100;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .d3 {
@@ -55,7 +59,7 @@
     transform: translateY(-50%);
     z-index: 3;
     animation: dd3 10s 100;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .d4 {
@@ -71,7 +75,7 @@
     transform: translateY(-50%);
     z-index: 1;
     animation: dd4 10s 100;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 @keyframes dd1 {
@@ -270,7 +274,7 @@ a {
     transform: translateY(-50%);
     z-index: 3;
     animation: dd33 10s 100;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 @keyframes dd33 {
     0% {
@@ -295,7 +299,7 @@ a {
     transform: translateY(-50%);
     z-index: 1;
     animation: dd44 10s 100;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 @keyframes dd44 {
     0% {
@@ -310,15 +314,16 @@ a {
     text-align: center;
     transform: translateX(55vw);
     margin-right: 60%;
-    margin-left:5%;
+    margin-left: 5%;
     position: absolute;
     top: 72%;
     padding: 10px 10px;
     font-family: Verdana, sans-serif;
     width: 400px;
-    box-shadow: 0 0 7px 3px #008000;
-    border-radius: 0;
-    background-color: #696969;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px , 2px 1px 6px 4px rgba(150, 128, 137, 0.5);
+    border: 3px dashed #C0C0C0;
+    color: #C0C0C0;
 }
 
 .text2 {
@@ -329,9 +334,10 @@ a {
     margin-left: 5%;
     font-family: Verdana, sans-serif;
     width: 400px;
-    box-shadow: 0 0 7px 3px #008000;
-    border-radius: 0;
-    background-color: #696969;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px, 2px 1px 6px 4px rgba(150, 128, 137, 0.5);
+    border: 3px dashed #C0C0C0;
+    color: #C0C0C0;
 }
 
 .d333 {
@@ -348,7 +354,7 @@ a {
     transform: translateY(-50%);
     z-index: 3;
     animation: dd33 10s 100;
-    animation-delay: 4s;
+    animation-delay: 1s;
 }
 
 @keyframes dd33 {
@@ -372,7 +378,7 @@ a {
     transform: translateY(-50%);
     z-index: 1;
     animation: dd222 10s 100;
-    animation-delay: 4s;
+    animation-delay: 1s;
 }
 
 @keyframes dd222 {
@@ -386,53 +392,56 @@ a {
 
 .texthelp {
     text-align: center;
-    transform: translateX(35vw);
+    transform: translateX(27vw);
     font-family: Verdana, sans-serif;
-    width: 400px;
-    box-shadow: 0 0 7px 3px #008000;
-    border-radius: 10px;
-    background-color: #696969;
+    width: 600px;
     padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px, 2px 1px 6px 4px rgba(150, 128, 137, 0.5);
+    border: 3px dashed #C0C0C0;
+    color: #C0C0C0;
 }
 
 .texthelp1 {
     text-align: left;
-    transform: translateX(1vw);
+    transform: translateX(4vw);
     position: absolute;
     top: 77%;
     padding: 10px 10px;
     font-family: Verdana, sans-serif;
-    width: 400px;
-    box-shadow: 0 0 7px 3px #008000;
+    width: 300px;
     border-radius: 10px;
-    background-color: #696969;
+    box-shadow: 0 0 0 3px, 2px 1px 6px 4px rgba(150, 128, 137, 0.5);
+    border: 3px dashed #C0C0C0;
+    color: #C0C0C0;
 }
 
 .texthelp2 {
     text-align: left;
-    transform: translateX(33vw);
+    transform: translateX(36vw);
     position: absolute;
     top: 77%;
     padding: 10px 10px;
     font-family: Verdana, sans-serif;
-    width: 400px;
-    box-shadow: 0 0 7px 3px #008000;
+    width: 300px;
     border-radius: 10px;
-    margin-left: 10px;
-    background-color: #696969;
+    box-shadow: 0 0 0 3px, 2px 1px 6px 4px rgba(150, 128, 137, 0.5);
+    border: 3px dashed #C0C0C0;
+    color: #C0C0C0;
 }
 
 .texthelp3 {
     text-align: left;
-    transform: translateX(65vw);
+    transform: translateX(68vw);
     position: absolute;
     top: 77%;
     padding: 10px 10px;
     font-family: Verdana, sans-serif;
-    width: 400px;
-    box-shadow: 0 0 7px 3px #008000;
+    width: 300px;
     border-radius: 10px;
-    background-color: #696969;
+    box-shadow: 0 0 0 3px, 2px 1px 6px 4px rgba(150, 128, 137, 0.5);
+    border: 3px dashed #C0C0C0;
+    color: #C0C0C0;
 }
 
 
@@ -446,7 +455,7 @@ a {
 }
 
     .hide1 + label {
-        margin-left: 123px;
+        margin-left: 116px;
         margin-bottom: 10px;
         font-family: Verdana, sans-serif;
         padding: 0;
@@ -619,7 +628,7 @@ a {
 }
 
     .hide3 + label {
-        margin-left: 988px;
+        margin-left: 975px;
         margin-bottom: 10px;
         font-family: Verdana, sans-serif;
         padding: 0;
@@ -948,9 +957,10 @@ h2 {
     padding: 10px 10px;
     font-family: Verdana, sans-serif;
     width: 400px;
-    box-shadow: 0 0 7px 3px #008000;
-    border-radius: 0;
-    background-color: #696969;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px, 2px 1px 6px 4px rgba(150, 128, 137, 0.5);
+    border: 3px dashed #C0C0C0;
+    color: #C0C0C0;
 }
 
 .regname {
