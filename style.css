@@ -1,5 +1,6 @@
 ﻿body {
     background-color: #2f2f2f;
+    
 }
 
 .z11{
@@ -743,10 +744,23 @@ h2 {
     font-family: 'Merriweather', serif;
 }
 
-.img1 {
-    text-align: center;
+h3 {
+    color: #C0C0C0;
+    font-family: 'Merriweather', serif;
+    text-align:center;
+    padding-bottom:30px;
 }
 
+.img1 {
+    text-align: center;
+    height: auto;
+    min-width: 100%;
+}
+
+.imgcust {
+    text-align: center;
+
+}
 
 
 .floating-button {
@@ -1129,3 +1143,12 @@ h2 {
 
 
 
+ul.pageNumbers {
+    text-align: center;
+    padding: 4px;
+}
+
+    ul.pageNumbers li {
+        display: inline-block;
+        font-size: 24px;
+    }
