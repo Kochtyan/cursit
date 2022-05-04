@@ -738,10 +738,16 @@ a {
 }
 
 
+h1 {
+    color: #D3D3D3;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
 
 h2 {
     color: #C0C0C0;
     font-family: 'Merriweather', serif;
+    text-align:center;
 }
 
 h3 {
@@ -759,7 +765,10 @@ h3 {
 
 .imgcust {
     text-align: center;
+}
 
+.currentPage {
+    color: #696969;
 }
 
 
@@ -1145,7 +1154,6 @@ h3 {
 
 ul.pageNumbers {
     text-align: center;
-    padding: 4px;
 }
 
     ul.pageNumbers li {
