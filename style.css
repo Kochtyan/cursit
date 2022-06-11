@@ -1163,6 +1163,20 @@ ul.pageNumbers {
 
 
 
+.txt {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    width: 400px;
+    margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px, 2px 1px 6px 4px rgba(150, 128, 137, 0.5);
+    border: 3px dashed #C0C0C0;
+    color: #C0C0C0;
+    transform: translateX(20vw);
+}
+
+
+
 
 
 
