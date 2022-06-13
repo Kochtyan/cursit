@@ -405,7 +405,7 @@ a {
 
 .texthelp1 {
     text-align: left;
-    transform: translateX(4vw);
+    transform: translateX(8vw);
     position: absolute;
     top: 77%;
     padding: 10px 10px;
@@ -419,7 +419,7 @@ a {
 
 .texthelp2 {
     text-align: left;
-    transform: translateX(36vw);
+    transform: translateX(40vw);
     position: absolute;
     top: 77%;
     padding: 10px 10px;
@@ -433,7 +433,7 @@ a {
 
 .texthelp3 {
     text-align: left;
-    transform: translateX(68vw);
+    transform: translateX(71vw);
     position: absolute;
     top: 77%;
     padding: 10px 10px;
@@ -972,9 +972,7 @@ h3 {
 
 .textreg {
     text-align: center;
-    transform: translateX(50vw);
-    margin-right: 60%;
-    margin-left: 5%;
+    transform: translateX(35vw);
     position: absolute;
     top: 40%;
     padding: 10px 10px;
@@ -989,28 +987,28 @@ h3 {
 .regname {
     position: absolute;
     top: 55%;
-    transform: translateX(27vw);
+    transform: translateX(42vw);
     width:200px;
     height:25px;
 }
 .regphone {
     position: absolute;
     top: 62%;
-    transform: translateX(27vw);
+    transform: translateX(42vw);
     width: 200px;
     height: 25px;
 }
 .regmail {
     position: absolute;
     top: 69%;
-    transform: translateX(27vw);
+    transform: translateX(42vw);
     width: 200px;
     height: 25px;
 }
 .regquestion {
     position: absolute;
     top: 76%;
-    transform: translateX(27vw);
+    transform: translateX(42vw);
     width: 200px;
     height: 25px;
 }
@@ -1034,7 +1032,7 @@ h3 {
     background: white;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
     transition: .3s;
-    transform: translateX(6vw);
+    transform: translateX(21vw);
 }
 
     .floating-buttonq:hover {
@@ -1173,6 +1171,117 @@ ul.pageNumbers {
     border: 3px dashed #C0C0C0;
     color: #C0C0C0;
     transform: translateX(20vw);
+}
+.txt- {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    width: 400px;
+    margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px, 2px 1px 6px 4px rgba(150, 128, 137, 0.5);
+    border: 3px dashed #C0C0C0;
+    color: #C0C0C0;
+    transform: translateX(-1vw);
+}
+label {
+    font-family: Verdana, sans-serif;
+    font-size: 24px;
+    width: 400px;
+}
+
+
+.familyName {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 24px;
+    color: #C0C0C0;
+}
+
+td img{
+    max-width:70%;
+    height: auto;
+}
+
+
+/* скрываем чекбоксы и блоки с содержанием */
+.hidenew,
+.hidenew + label ~ div {
+    display: none;
+}
+    /* вид текста label */
+    .hidenew + label {
+        margin: 0;
+        padding: 0;
+        color: #C0C0C0;
+        cursor: pointer;
+        display: inline-block;
+    }
+    /* вид текста label при активном переключателе */
+    .hidenew:checked + label {
+        color: #808080;
+        border-bottom: 0;
+        padding-bottom:10px;
+    }
+        /* когда чекбокс активен показываем блоки с содержанием  */
+        .hidenew:checked + label + div {
+            display: block;
+            padding: 10px;
+            /* чуточку анимации при появлении */
+            -webkit-animation: fade ease-in 0.5s;
+            -moz-animation: fade ease-in 0.5s;
+            animation: fade ease-in 0.5s;
+        }
+/* анимация при появлении скрытых блоков */
+@-moz-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.hidenew + label:before {
+    color: #C0C0C0;
+    content: "\21D3";
+    display: block;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.hidenew:checked + label:before {
+    content: "\21D1";
+    color: #808080;
 }
 
 
