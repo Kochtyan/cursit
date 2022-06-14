@@ -19,19 +19,53 @@
         </ul>
     </nav>
 
+    <form name="form" class="formClass">
+        <select name="famSel" size="5" onChange="famSwap()">
+            <option value="" disabled selected>--Семейство растений--</option>
+            <option value="fam1.html">Плауновые (Lycopodiaceae Beauv. ex Mirb.)</option>
+            <option value="fam2.html">Хвощовые (Equisetaceae Rich. ex DC.)</option>
+            <option value="fam3.html">Подчешуйниковые (Hypolepidaceae Pichi Sermolli)</option>
+            <option value="fam4.html">Телиптерисовые (Thelypteridaceae Pichi Sermolli)</option>
+            <option value="fam5.html">Кочедыжниковые (Athyriaceae Alst.)</option>
+            <option value="fam6.html">Щитовниковые (Dryopteridaceae Ching)</option>
+            <option value="fam7.html">Оноклеевые (Onocleaceae Pichi Sermolli)</option>
+            <option value="fam8.html">Сальвиниевые (Salviniaceae T. Lest.)</option>
+            <option value="fam9.html">Сосновые (Pinaceae Lindl.)</option>
+            <option value="fam10.html">Кипарисовые (Cupressaceae Rich. ex Bartl.)</option>
+        </select>
+    </form>
 
     <table>
         <tr>
-            <td align="center" style="padding-left:5vw;"><a href="fam1.html"><img src="img/nimg1.jpg"></a><br /><p class="familyName"><a href="fam1.html">Плауновые (Lycopodiaceae Beauv. ex Mirb.)</a></p></td>
-            <td align="center" style="padding-left:5vw;"><a href="fam2.html"><img src="img/nimg2.jpg"></a><br /><p class="familyName"><a href="fam2.html">Хвощовые (Equisetaceae Rich. ex DC.)</a></p></td>
+            <td align="center" style="padding-left:5vw;"><a class="alta" href="fam1.html"><img src="img/nimg1.jpg"></a><p class="familyName"><a class="alta" style="transform: translateX(3vw);" href="fam1.html">Плауновые (Lycopodiaceae Beauv. ex Mirb.)</a></p></td>
+            <td align="center" style="padding-left:9vw;"><a class="alta" href="fam2.html"><img src="img/nimg2.jpg"></a><p class="familyName"><a class="alta" style="transform: translateX(4vw);" href="fam2.html">Хвощовые (Equisetaceae Rich. ex DC.)</a></p></td>
         </tr>
         <tr>
-            <td align="center" style="padding-left:5vw;"><a href="fam3.html"><img src="img/nimg7.jpg"></a><br /><p class="familyName"><a href="fam3.html">Подчешуйниковые (Hypolepidaceae Pichi Sermolli)</a></p></td>
-            <td align="center" style="padding-left:5vw;"><a href="fam4.html"><img src="img/nimg8.jpg"></a><br /><p class="familyName"><a href="fam4.html">Телиптерисовые (Thelypteridaceae Pichi Sermolli)</a></p></td>
+            <td align="center" style="padding-left:5vw;"><a class="alta" href="fam3.html"><img src="img/nimg7.jpg"></a><p class="familyName"><a class="alta" href="fam3.html">Подчешуйниковые (Hypolepidaceae Pichi Sermolli)</a></p></td>
+            <td align="center" style="padding-left:9vw;"><a class="alta" href="fam4.html"><img src="img/nimg8.jpg"></a><p class="familyName"><a class="alta" href="fam4.html">Телиптерисовые (Thelypteridaceae Pichi Sermolli)</a></p></td>
+        </tr>
+        <tr>
+            <td align="center" style="padding-left:5vw;"><a class="alta" href="fam5.html"><img src="img/nimg9.jpg"></a><p class="familyName"><a class="alta" style="transform: translateX(5vw);" href="fam5.html">Кочедыжниковые (Athyriaceae Alst.)</a></p></td>
+            <td align="center" style="padding-left:9vw;"><a class="alta" href="fam6.html"><img src="img/nimg12.jpg"></a><p class="familyName"><a class="alta" style="transform: translateX(4vw);" href="fam6.html">Щитовниковые (Dryopteridaceae Ching)</a></p></td>
+        </tr>
+        <tr>
+            <td align="center" style="padding-left:5vw;"><a class="alta" href="fam7.html"><img src="img/nimg14.jpg"></a><p class="familyName"><a class="alta" style="transform: translateX(4vw);" href="fam7.html">Оноклеевые (Onocleaceae Pichi Sermolli)</a></p></td>
+            <td align="center" style="padding-left:9vw;"><a class="alta" href="fam8.html"><img src="img/nimg15.jpg"></a><p class="familyName"><a class="alta" style="transform: translateX(5vw);" href="fam8.html">Сальвиниевые (Salviniaceae T. Lest.)</a></p></td>
+        </tr>
+        <tr>
+            <td align="center" style="padding-left:5vw;"><a class="alta" href="fam9.html"><img src="img/nimg16.jpg"></a><p class="familyName"><a class="alta" style="transform: translateX(8vw);" href="fam9.html">Сосновые (Pinaceae Lindl.)</a></p></td>
+            <td align="center" style="padding-left:9vw;"><a class="alta" href="fam10.html"><img src="img/nimg21.jpg"></a><p class="familyName"><a class="alta" style="transform: translateX(3vw);" href="fam10.html">Кипарисовые (Cupressaceae Rich. ex Bartl.)</a></p></td>
         </tr>
     </table>
 
 
-        <script src="script.js"></script>
+
+    <ul class="pageNumbers">
+        <li><p class="currentPage">1</p></li>
+        <li><a href="katalognew2.html">2</a></li>
+        <li><a href="katalognew3.html">3</a></li>
+    </ul>
+
+    <script src="script.js"></script>
 </body>
 </html>

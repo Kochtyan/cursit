@@ -1195,11 +1195,14 @@ label {
     font-family: Verdana, sans-serif;
     font-size: 24px;
     color: #C0C0C0;
+    padding-bottom: 15px;
+
+
 }
 
-td img{
-    max-width:70%;
-    height: auto;
+td img {
+    height: 320px;
+    width: 264px;
 }
 
 
@@ -1284,6 +1287,21 @@ td img{
     color: #808080;
 }
 
+.alta {
+    width:fit-content;
+}
+
+.formClass {
+    border-radius: 3px;
+    padding: 20px 25px;
+    text-align:center;
+}
+select {
+    width: 400px;
+    border-radius: 3px;
+    vertical-align: middle;
+    overflow-y: auto;
+}
 
 
 

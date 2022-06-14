@@ -121,8 +121,13 @@ function anim(duration) {
     }
 };
 
-var scrollMenu = anim(2000)
+var scrollMenu = anim(2000);
 
+
+function famSwap(form) {
+    var URL = document.form.famSel.options[document.form.famSel.selectedIndex].value;
+    window.location.href = URL;
+}
 
 
 
