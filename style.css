@@ -267,7 +267,6 @@ a {
     overflow: hidden;
     height: 100vh;
     width: 30vw;
-    left: 25vw;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
     background-position: -35vw 60%;
     top: 55%;
@@ -351,7 +350,7 @@ a {
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
     background-position: -35vw 60%;
     top: 55%;
-    left: 65%;
+    left: 25%;
     transform: translateY(-50%);
     z-index: 3;
     animation: dd33 10s 100;
@@ -374,7 +373,6 @@ a {
     height: 50vh;
     width: 25vw;
     background-position: -10vw 50%;
-    left: 40%;
     top: 55%;
     transform: translateY(-50%);
     z-index: 1;
@@ -1149,10 +1147,9 @@ ul.pageNumbers {
     box-shadow: 0 0 0 3px, 2px 1px 6px 4px rgba(150, 128, 137, 0.5);
     border: 3px dashed #C0C0C0;
     color: #C0C0C0;
-    transform: translateX(20vw);
 }
 .txt- {
-    text-align: center;
+    text-align: justify;
     font-family: Verdana, sans-serif;
     width: 400px;
     margin-left: 40px;
@@ -1284,6 +1281,7 @@ select {
     border-radius: 3px;
     vertical-align: middle;
     overflow-y: auto;
+    border: none;
 }
 
 
